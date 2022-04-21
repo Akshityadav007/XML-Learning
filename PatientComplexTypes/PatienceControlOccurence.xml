@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Patient xmlns:tns="http://www.example.org/Patient"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/Patient PatientControlOccurence.xsd ">
+	<tns:name>Honolulu</tns:name>
+	<tns:age>25</tns:age>
+	<tns:gender>M</tns:gender>
+	<tns:phone>1234567890</tns:phone>
+	<tns:paymentType>
+   <!-- 		<tns:cash>8000</tns:cash> 	-->		<!-- Firstly try this and then the other insurance type -->
+   <tns:insurance>
+   		<tns:limit>10000</tns:limit>
+   		<tns:provider>Blue Cross</tns:provider>
+   </tns:insurance>
+	</tns:paymentType>
+</tns:Patient>
